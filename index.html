@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="css/object.css" rel="stylesheet">
+    <script src="js/object.js"></script>
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600&display=swap" rel="stylesheet">
+    <!--bxslider-->
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+    <script src="js/jquery.bxslider.min.js"></script>
+
+</head>
+<body>
+    <header>
+            <div id="top-banner">
+                <ul class="banner">
+                    <li>[전시] 서교점 파리바게트 : 스위뜨 디저뜨 파리바게뜨 </li>
+                    <li>[전시] 성수점 후긴앤무닌 : WALK AROUND</li>
+                    <li>[전시] 스케인드앤드스코프 : 호랑이와 클로버</li>
+                </ul>
+            </div>
+            <div id="left-control">
+                <div class="box"><button type="button" class="time"><img src="img/time.gif"></button></div>
+                <div class="box"><button type="button" class="up" onclick="pageUp()"><img src="img/up.gif"></button></div>
+                <div class="box"><button type="button" class="down" onclick="pageDown()"><img src="img/down.gif"></button></div>
+            </div>
+            <div id="left-sns">
+                <div class="sns"><img src="img/kakao.png"></div>
+                <div class="sns"><img src="img/naver.png"></div>
+            </div>
+        <div class="inner">
+            <div class="logo"><a href="#"><img src="img/top_logo.gif"></a></div>
+            <div class="search">
+                <div class="my">
+                    <ul>
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">MYPAGE</a></li>
+                        <li><a href="#">ORDER</a></li>
+                        <li><a href="#">CART</a></li>
+                        <li><a href="#">STORE</a></li>
+                    </ul>
+                </div>
+                <img src="img/search_icon.png">
+            </div>
+        </div>
+    </header>
+    <nav id="gnb" class="nav"> 
+        <ul id="menu" class="flex-inner">
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">BEST</a></li>
+            <li><a href="#">STYLE</a>
+                <ul class="submenu">
+                    <li><a href="#">오브젝트 웨어</a></li>
+                    <li><a href="#">표뵤뵤</a></li>
+                    <li><a href="#">악세서리</a></li>
+                    <li><a href="#">가방/에코백</a></li>
+                </ul>
+            </li>
+            <li><a href="#">HOME</a>
+                <ul class="submenu">
+                    <li><a href="#">식기/컵</a></li>
+                    <li><a href="#">머그/텀블러</a></li>
+                    <li><a href="#">보관용기</a></li>
+                    <li><a href="#">페브릭</a></li>
+                </ul>
+            </li>
+            <li><a href="#">STATIONERY</a>
+                <ul class="submenu">
+                    <li><a href="">노트</a></li>
+                    <li><a href="#">데스크용품</a></li>
+                    <li><a href="#">사무용품</a></li>
+                    <li><a href="#">핸드폰 케이스</a></li>
+                    <li><a href="#">필기구</a></li>
+                </ul>
+             </li>
+            <li><a href="#">BOOKS</a>
+                <ul class="submenu">
+                    <li><a href="#">에세이</a></li>
+                    <li><a href="#">소설</a></li>
+                    <li><a href="#">시</a></li>
+                </ul>
+            </li>
+            <li><a href="#">RECYCLE</a></li>
+            <li><a href="#">EXHIBITION</a></li>
+            <li><a href="#">OBJECT</a></li>
+        </ul>
+    </nav>
+
+    <section id="main-slide">
+        <div class="inner">
+            <div class="slider">
+                <div class="slide">
+                    <img src="img/slide01.jpg">
+                    <div class="slide-title">
+                        <span>gcolon book</span>
+                        <h1>지콜론북 시네마 베이커리</h1>
+                        <p>지콜론북의 새로운 책'시네마 베이커리'서교점에서 만나요!</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/slide02.jpg">
+                    <div class="slide-title">
+                        <span>gcolon book</span>
+                        <h1>지콜론북 시네마 베이커리</h1>
+                        <p>지콜론북의 새로운 책'시네마 베이커리'서교점에서 만나요!</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/slide03.jpg">
+                    <div class="slide-title">
+                        <span>gcolon book</span>
+                        <h1>지콜론북 시네마 베이커리</h1>
+                        <p>지콜론북의 새로운 책'시네마 베이커리'서교점에서 만나요!</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/slide04.jpg">
+                    <div class="slide-title">
+                        <span>gcolon book</span>
+                        <h1>지콜론북 시네마 베이커리</h1>
+                        <p>지콜론북의 새로운 책'시네마 베이커리'서교점에서 만나요!</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/slide05.jpg">
+                    <div class="slide-title">
+                        <span>gcolon book</span>
+                        <h1>지콜론북 시네마 베이커리</h1>
+                        <p>지콜론북의 새로운 책'시네마 베이커리'서교점에서 만나요!</p>
+                    </div>
+                </div>              
+                <!--<div id="prev"><img src="img/btnprev.png"></div>
+                <div id="next"><img src="img/btnnext.png"></div> -->
+            </div> <!--slider-->
+        </div> <!--inner-->
+    </section>
+
+    <section id="exhibition">
+        <div class="inner">
+            <h1 class="title">EXHIBITION</h1>
+            <div class="flex-inner">
+            <div class="ex-box">
+            <a href="#">
+                <img src="img/ex01.jpg">
+                <p>EXHIBITION <span>2022.01.08~2022.02.02</span></p>
+                <p class="ex-title">백조맨숀</p>
+                <p>오래된 보물들이 가득한 백조맨숀으로 놀러오세요!</p>
+            </a>
+            </div>
+            <div class="ex-box">
+            <a href="#">
+                <img src="img/ex02.jpg">
+                <p>EXHIBITION <span>2022.01.08~2022.02.02</span></p>
+                <p class="ex-title">WITH YOU</p>
+                <p>소중한 사람들에게 따뜻한 마음을 나눠보세요!</p>
+            </a>
+            </div>
+            <div class="ex-box">
+            <a href="#">    
+                <img src="img/ex03.jpg">
+                <p class="span">EXHIBITION <span>2022.01.08~2022.02.02</span></p>
+                <p class="ex-title">CAT DOG PEOPLE</p>
+                <p>일상에서 만난 고양이, 강아지 사람들의 순간!</p>
+            </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="bestseller">
+        <div class="inner">
+            <h3 class="title">BEST SELLER</h3>
+            <ul class="gallery">
+                <li class="all">ALL</li>
+                <li class="style">STYLE</li>
+                <li class="living">LIVING</li>
+                <li class="stationery">STATIONERY</li>
+            </ul>
+
+            <div class="contents all-cont">
+                <div class="cont1 cont">
+                    <div class="cont-img c-img8"></div>
+                    <p>메세지 카드 - 클로버 2types</p>
+                    <span>2,000원</span>
+                </div>
+                <div class="cont2 cont">
+                    <div class="cont-img c-img7"></div>
+                    <p>[SOSO STUDIO] 쏘쏘 푸 파우치 BLACK</p>
+                    <span>22,000원</span>
+                </div>
+                <div class="cont3 cont">
+                    <div class="cont-img c-img6"></div>
+                    <p>[Oth,] 젊은 날의 바다 섬유향수</p>
+                    <span>29,000원</span>
+                </div>
+                <div class="cont4 cont">
+                    <div class="cont-img c-img5"></div>
+                    <p>[핸드인글러브] mini memo pad 02</p>
+                    <span>2,000원</span>
+                </div>
+                <div class="cont5 cont">
+                    <div class="cont-img c-img4"></div>
+                    <p>[피스코리아] 평화 블랙사각안전가위</p>
+                    <span>5,000원</span>
+                </div>
+                <div class="cont6 cont">
+                    <div class="cont-img c-img3"></div>
+                    <p>[그럼사라] 마스킹테이프-짙은 풀</p>
+                    <span>5,500원</span>
+                </div>
+                <div class="cont7 cont">
+                    <div class="cont-img c-img2"></div>
+                    <p>[소소문구] 양면 코너 책갈피</p>
+                    <span>2,500원</span>
+                </div>
+                <div class="cont8 cont">
+                    <div class="cont-img c-img1"></div>
+                    <p>[오이뮤] 색이름 352 미니</p>
+                    <span>18,000원</span>
+                </div>
+            </div>
+
+            <div class="contents style-cont">
+                <div class="cont1 cont">
+                    <div class="cont-img c-img1"></div>
+                    <p>메세지 카드 - 클로버 2types</p>
+                    <span>2,000원</span>
+                </div>
+                <div class="cont2 cont">
+                    <div class="cont-img c-img2"></div>
+                    <p>[SOSO STUDIO] 쏘쏘 푸 파우치 BLACK</p>
+                    <span>22,000원</span>
+                </div>
+                <div class="cont3 cont">
+                    <div class="cont-img c-img3"></div>
+                    <p>[Oth,] 젊은 날의 바다 섬유향수</p>
+                    <span>29,000원</span>
+                </div>
+                <div class="cont4 cont">
+                    <div class="cont-img c-img4"></div>
+                    <p>[핸드인글러브] mini memo pad 02</p>
+                    <span>2,000원</span>
+                </div>
+                <div class="cont5 cont">
+                    <div class="cont-img c-img5"></div>
+                    <p>[피스코리아] 평화 블랙사각안전가위</p>
+                    <span>5,000원</span>
+                </div>
+                <div class="cont6 cont">
+                    <div class="cont-img c-img6"></div>
+                    <p>[그럼사라] 마스킹테이프-짙은 풀</p>
+                    <span>5,500원</span>
+                </div>
+                <div class="cont7 cont">
+                    <div class="cont-img c-img7"></div>
+                    <p>[소소문구] 양면 코너 책갈피</p>
+                    <span>2,500원</span>
+                </div>
+                <div class="cont8 cont">
+                    <div class="cont-img c-img8"></div>
+                    <p>[오이뮤] 색이름 352 미니</p>
+                    <span>18,000원</span>
+                </div>
+            </div>
+
+            <div class="contents living-cont">
+                <div class="cont1 cont">
+                    <div class="cont-img c-img8"></div>
+                    <p>메세지 카드 - 클로버 2types</p>
+                    <span>2,000원</span>
+                </div>
+                <div class="cont2 cont">
+                    <div class="cont-img c-img7"></div>
+                    <p>[SOSO STUDIO] 쏘쏘 푸 파우치 BLACK</p>
+                    <span>22,000원</span>
+                </div>
+                <div class="cont3 cont">
+                    <div class="cont-img c-img6"></div>
+                    <p>[Oth,] 젊은 날의 바다 섬유향수</p>
+                    <span>29,000원</span>
+                </div>
+                <div class="cont4 cont">
+                    <div class="cont-img c-img5"></div>
+                    <p>[핸드인글러브] mini memo pad 02</p>
+                    <span>2,000원</span>
+                </div>
+                <div class="cont5 cont">
+                    <div class="cont-img c-img4"></div>
+                    <p>[피스코리아] 평화 블랙사각안전가위</p>
+                    <span>5,000원</span>
+                </div>
+                <div class="cont6 cont">
+                    <div class="cont-img c-img3"></div>
+                    <p>[그럼사라] 마스킹테이프-짙은 풀</p>
+                    <span>5,500원</span>
+                </div>
+                <div class="cont7 cont">
+                    <div class="cont-img c-img2"></div>
+                    <p>[소소문구] 양면 코너 책갈피</p>
+                    <span>2,500원</span>
+                </div>
+                <div class="cont8 cont">
+                    <div class="cont-img c-img1"></div>
+                    <p>[오이뮤] 색이름 352 미니</p>
+                    <span>18,000원</span>
+                </div>
+            </div>
+
+            <div class="contents stat-cont">
+                <div class="cont1 cont">
+                    <div class="cont-img c-img1"></div>
+                    <p>메세지 카드 - 클로버 2types</p>
+                    <span>2,000원</span>
+                </div>
+                <div class="cont2 cont">
+                    <div class="cont-img c-img2"></div>
+                    <p>[SOSO STUDIO] 쏘쏘 푸 파우치 BLACK</p>
+                    <span>22,000원</span>
+                </div>
+                <div class="cont3 cont">
+                    <div class="cont-img c-img3"></div>
+                    <p>[Oth,] 젊은 날의 바다 섬유향수</p>
+                    <span>29,000원</span>
+                </div>
+                <div class="cont4 cont">
+                    <div class="cont-img c-img4"></div>
+                    <p>[핸드인글러브] mini memo pad 02</p>
+                    <span>2,000원</span>
+                </div>
+                <div class="cont5 cont">
+                    <div class="cont-img c-img5"></div>
+                    <p>[피스코리아] 평화 블랙사각안전가위</p>
+                    <span>5,000원</span>
+                </div>
+                <div class="cont6 cont">
+                    <div class="cont-img c-img6"></div>
+                    <p>[그럼사라] 마스킹테이프-짙은 풀</p>
+                    <span>5,500원</span>
+                </div>
+                <div class="cont7 cont">
+                    <div class="cont-img c-img7"></div>
+                    <p>[소소문구] 양면 코너 책갈피</p>
+                    <span>2,500원</span>
+                </div>
+                <div class="cont8 cont">
+                    <div class="cont-img c-img8"></div>
+                    <p>[오이뮤] 색이름 352 미니</p>
+                    <span>18,000원</span>
+                </div>
+            </div>
+        </div><!--inner-->
+    </section>
+
+    <section id="event">
+        <div id="event-control">
+        <div class="event-group">
+        <div class="event-wrap">
+            <div class="event-contents">
+                <img src="img/event1.jpg">
+            </div>
+            <div class="event-text">
+                <span>BREAND</span>
+                <h1>피스코리아 아티스트 콜라보 패키지</h2>
+                <p>피스코리아 x 웜그레이테일</p>
+                <button class="event-btn">MORE</button>
+            </div>
+        </div>
+        <div class="event-wrap"  id="color2">
+            <div class="event-contents">
+                <img src="img/event2.jpg">
+            </div>
+            <div class="event-text">
+                <span>BREAND</span>
+                <h1>공장기프트백</h2>
+                <p>소중한 사람들에게 전하는 뜻깊은 선물</p>
+                <button class="event-btn">MORE</button>
+            </div>
+        </div>
+        <div class="event-wrap" id="color3">
+            <div class="event-contents">
+                <img src="img/event3.jpg">
+            </div>
+            <div class="event-text">
+                <span>SPECIAL</span>
+                <h1>에코백 가방 파우치 기획전</h2>
+                <p>수납과 디자인까지 모두 갖군 에코백 가방 파우치를 만나보세요</p>
+                <button class="event-btn">MORE</button>
+            </div>
+        </div><!--event-wrap-->
+    </div><!--event-group-->
+        <div class="btns">
+            <div id="e-prev"></div>
+            <div id="e-next"></div>
+        </div>
+    </div><!--event-control-->
+    </section>
+
+    <section id="review">
+        <div class="inner">
+        <h3 class="title">REVIEW</h3>
+        <div class="flex-inner">
+            <div class="re-box">
+                <img src="img/re1.jpg">
+                <div class="re-text">
+                    <h5 style="margin-left:10px;">다이어리도 다양하게 꾸밀 수 있다는 장점이 있습니다.</h5>
+                    <p>다이어리도 다양하게 꾸밀 수 있는 여백이 있어서 사용하기 편한 것 같아요.</p>
+                    <span>네**** | 2022-02-21</span>
+                    <div class="s-re">
+                        <img src="img/re1.jpg">
+                        <span>[오브젝트] 2022 오브젝트 다이어리</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="re-box">
+                <img src="img/re2.jpg">
+                <div class="re-text">
+                    <h5 style="margin-left:10px;">다이어리도 다양하게 꾸밀 수 있다는 장점이 있습니다.</h5>
+                    <p>다이어리도 다양하게 꾸밀 수 있는 여백이 있어서 사용하기 편한 것 같아요.</p>
+                    <span>네**** | 2022-02-21</span>
+                    <div class="s-re">
+                        <img src="img/re1.jpg">
+                        <span>[오브젝트] 2022 오브젝트 다이어리</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="re-box">
+                <img src="img/re3.jpg">
+                <div class="re-text">
+                    <h5 style="margin-left:10px;">다이어리도 다양하게 꾸밀 수 있다는 장점이 있습니다.</h5>
+                    <p>다이어리도 다양하게 꾸밀 수 있는 여백이 있어서 사용하기 편한 것 같아요.</p>
+                    <span>네**** | 2022-02-21</span>
+                    <div class="s-re">
+                        <img src="img/re1.jpg">
+                        <span>[오브젝트] 2022 오브젝트 다이어리</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="re-box">
+                <img src="img/re4.jpg">
+                <div class="re-text">
+                    <h5 style="margin-left:10px;">다이어리도 다양하게 꾸밀 수 있다는 장점이 있습니다.</h5>
+                    <p>다이어리도 다양하게 꾸밀 수 있는 여백이 있어서 사용하기 편한 것 같아요.</p>
+                    <span>네**** | 2022-02-21</span>
+                    <div class="s-re">
+                        <img src="img/re1.jpg">
+                        <span>[오브젝트] 2022 오브젝트 다이어리</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="re-box">
+                <img src="img/re5.jpg">
+                <div class="re-text">
+                    <h5 style="margin-left:10px;">다이어리도 다양하게 꾸밀 수 있다는 장점이 있습니다.</h5>
+                    <p>다이어리도 다양하게 꾸밀 수 있는 여백이 있어서 사용하기 편한 것 같아요.</p>
+                    <span>네**** | 2022-02-21</span>
+                    <div class="s-re">
+                        <img src="img/re1.jpg">
+                        <span>[오브젝트] 2022 오브젝트 다이어리</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="re-box">
+                <img src="img/re6.jpg">
+                <div class="re-text">
+                    <h5 style="margin-left:10px;">다이어리도 다양하게 꾸밀 수 있다는 장점이 있습니다.</h5>
+                <p>다이어리도 다양하게 꾸밀 수 있는 여백이 있어서 사용하기 편한 것 같아요.</p>
+                    <span>네**** | 2022-02-21</span>
+                    <div class="s-re">
+                        <img src="img/re1.jpg">
+                        <span>[오브젝트] 2022 오브젝트 다이어리</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="re-box">
+                <img src="img/re7.jpg">
+                <div class="re-text">
+                    <h5 style="margin-left:10px;">다이어리도 다양하게 꾸밀 수 있다는 장점이 있습니다.</h5>
+                    <p>다이어리도 다양하게 꾸밀 수 있는 여백이 있어서 사용하기 편한 것 같아요.</p>
+                    <span>네**** | 2022-02-21</span>
+                    <div class="s-re">
+                        <img src="img/re1.jpg">
+                        <span>[오브젝트] 2022 오브젝트 다이어리</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="re-box">
+                <img src="img/re8.jpg">
+                <div class="re-text">
+                    <h5 style="margin-left:10px;">다이어리도 다양하게 꾸밀 수 있다는 장점이 있습니다.</h5>
+                    <p>다이어리도 다양하게 꾸밀 수 있는 여백이 있어서 사용하기 편한 것 같아요.</p>
+                    <span>네**** | 2022-02-21</span>
+                    <div class="s-re">
+                        <img src="img/re1.jpg">
+                        <span>[오브젝트] 2022 오브젝트 다이어리</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="re-box">
+                <img src="img/re9.jpg">
+                <div class="re-text">
+                    <h5 style="margin-left:10px;">다이어리도 다양하게 꾸밀 수 있다는 장점이 있습니다.</h5>
+                    <p>다이어리도 다양하게 꾸밀 수 있는 여백이 있어서 사용하기 편한 것 같아요.</p>
+                    <span>네**** | 2022-02-21</span>
+                    <div class="s-re">
+                        <img src="img/re1.jpg">
+                        <span>[오브젝트] 2022 오브젝트 다이어리</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="re-box">
+                <img src="img/re10.jpg">
+                <div class="re-text">
+                    <h5 style="margin-left:10px;">다이어리도 다양하게 꾸밀 수 있다는 장점이 있습니다.</h5>
+                    <p>다이어리도 다양하게 꾸밀 수 있는 여백이 있어서 사용하기 편한 것 같아요.</p>
+                    <span>네**** | 2022-02-21</span>
+                    <div class="s-re">
+                        <img src="img/re1.jpg">
+                        <span>[오브젝트] 2022 오브젝트 다이어리</span>
+                    </div>
+                </div>
+            </div>
+        </div><!--flex-inner-->        
+                 <div id="re-btn"><button> 상품리뷰 모두보기</button></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="inner">
+            <div class="flex-inner">
+                <div class="footer-left">
+                    <span class="number">02 3144 7778</span>
+                    <div class="q-a">
+                        <p>통화량이 많을 때는 Q&A 게시판을 이용해주세요.
+                        <br>MON-FRI 9:00~18:00, LUNCH 12:00~14:00 / SAT-SUN·HOLIDAY OFF
+                        <br>예금주:(주)오브젝트생활연구소 1005-803-227785</p>
+                    </div>
+                    <address>
+                        <p class="font-bold">주식회사오브젝트생활연구소</p>
+                        <p>서울특별시 마포구 와우산로35길 13 I 사업자번호 : 610-88-00542 [사업자정보확인] I 통신판매업신고 : 2016-서울마포-1355
+                        CEO : 유세미나 I CPO : 이영택I MAIL : object.marbin@gmail.com
+                        CALL CENTER : 02-3144-7778 I FAX : 02-3144-7780</p>
+                    </address>
+                    <div class="online">
+                        <p class="font-bold">오브젝트 온라인 고객센터</p>
+                        <p>03723 서울특별시 서대문구 연희로 142 (연희동) 2층 오브젝트 I CALL CENTER : 02-3144-7778</p>
+                        <p class="font-bold">입점문의 : object.md@gmail.com</p>
+                    </div>
+                    <div class="copyright">
+                        <p>ⓒ 오브젝트 온라인 ALL RIGHTS RESERVED. HOSTING BY CAFE24.</p>
+                    </div>
+                    <div class="company">
+                        <span><a href="#">회사소개</a></span>
+                        <span><a href="#">이용약관</a></span>
+                        <span><a href="#">개인정보처리방침</a></span>
+                        <span><a href="#">이용안내</a></span>
+                    </div>
+                </div><!--footer-left-->
+
+                <div class="footer-site">
+                    <img src="img/instargram.gif" class="f-img">
+                    <ul class="shopping">
+                        <li><a href="#">Shopping Quick</a></li>
+                        <li><a href="#"MY PAGE></a></li>
+                        <li><a href="#">ORDER</a></li>
+                        <li><a href="#">WISH LIST</a></li>  
+                    </ul>
+                    
+                    <ul class="community">
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">REVIEW</a></li>  
+                        <li><a href href="#">QNA</a></li>
+                        <li><a href href="#">OFFLINE STORE</a></li>
+                        <li><a href="#">MEMBERSHIP</a></li>
+                    </ul>
+                </div><!--footer-site-->
+            </div><!--flex-inner-->
+        </div><!--inner-->
+    </footer>
+</body>
+</html>
